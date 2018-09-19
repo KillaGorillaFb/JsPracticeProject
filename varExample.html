@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script> //Keeping this script in the head since it does not run until called upon
+        var animal = "Horse";
+
+        function number1() {
+            var animal = "Dog";
+            document.write(animal);
+
+            for (let i = 0; i < 3; i++){
+            //Using 'let' to declare i lets us remain 
+            //local within this block or for loop only
+                document.write(i);
+            }
+                document.write(i);
+        }
+        
+        function number2() {
+            document.write(animal);
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Scope Of Variables</h1>
+    <script>
+    number1();
+    document.write("<br/>");
+    number2();
+
+    </script>
+</body>
+
+</html>
